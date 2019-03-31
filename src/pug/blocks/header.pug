@@ -1,0 +1,50 @@
+// START: header
+.header
+  .container
+    .row.header__row
+      .col.d-lg-none
+        button.mobile-nav-btn 
+          span
+          span
+          span
+      .col.header__nav
+        nav.main-nav
+          a(href="#").main-nav__link Меню
+          a(href="#").main-nav__link Доставка
+          a(href="#").main-nav__link Бронь
+          a(href="#").main-nav__link Акции
+          a(href="#").main-nav__link Контакты
+      .col-auto.header__logo: a(href="/").logo: img(src="img/logo.png", alt="Шишка").img-responsive
+      .col.header__right
+        .header-right
+          .header-right__col
+            .top-cart-wrapper
+              a(href="/cart/").top-cart
+                .top-cart__name(top-cart__name_added)
+                  span Корзина 
+                  span 0
+                .top-cart__price
+                  span 0 
+                  span руб.
+              .cart-drop
+                ul.cart-drop__list
+                  li.cart-drop__item
+                    .cart-drop__row
+                      .prod-name Американский бургер
+                        .prod-size 250 гр
+                      button.prod-close x
+                    .cart-drop__row
+                      .counter
+                        button.counter__btn -
+                        input(type="text" value="0").counter__input 
+                        button.counter__btn +
+                      .prod-price 370 р.
+                .cart-drop__footer
+                  a(href="#").btn.btn_primary-light.w-100 Оформить заказ
+          .header-right__sep
+          .header-right__col
+            .header-contacts
+              a(href="tel: +74832505200").header-contacts__item  <small>+7 (4832)</small>  505-200
+              a(href="tel: +74832505300").header-contacts__item  <small>+7 (4832)</small>  505-300
+              <a class="btn btn_bd header-contacts__callback" href="#">Обратный звонок</a>
+// END: /header

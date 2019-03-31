@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Cambria';
+    src: url('subset-Cambria.eot');
+    src: url('subset-Cambria.eot?#iefix') format('embedded-opentype'),
+        url('subset-Cambria.woff2') format('woff2'),
+        url('subset-Cambria.woff') format('woff'),
+        url('subset-Cambria.svg#Cambria') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('subset-ProximaNova-Light.eot');
+    src: url('subset-ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('subset-ProximaNova-Light.woff2') format('woff2'),
+        url('subset-ProximaNova-Light.woff') format('woff'),
+        url('subset-ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('subset-ProximaNova-Regular.eot');
+    src: url('subset-ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-ProximaNova-Regular.woff2') format('woff2'),
+        url('subset-ProximaNova-Regular.woff') format('woff'),
+        url('subset-ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('subset-ProximaNova-Semibold.eot');
+    src: url('subset-ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('subset-ProximaNova-Semibold.woff2') format('woff2'),
+        url('subset-ProximaNova-Semibold.woff') format('woff'),
+        url('subset-ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('subset-ProximaNova-Bold.eot');
+    src: url('subset-ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('subset-ProximaNova-Bold.woff2') format('woff2'),
+        url('subset-ProximaNova-Bold.woff') format('woff'),
+        url('subset-ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('subset-ProximaNova-Black.eot');
+    src: url('subset-ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+        url('subset-ProximaNova-Black.woff2') format('woff2'),
+        url('subset-ProximaNova-Black.woff') format('woff'),
+        url('subset-ProximaNova-Black.svg#ProximaNova-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magnolia Script';
+    src: url('subset-Magnolia-Script.eot');
+    src: url('subset-Magnolia-Script.eot?#iefix') format('embedded-opentype'),
+        url('subset-Magnolia-Script.woff2') format('woff2'),
+        url('subset-Magnolia-Script.woff') format('woff'),
+        url('subset-Magnolia-Script.svg#Magnolia-Script') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

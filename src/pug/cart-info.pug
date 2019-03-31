@@ -1,0 +1,129 @@
+extends _template
+
+block main
+  .container
+    .inner-header
+      .h.h_big корзина
+    ul.inner-nav.inner-nav_arrow
+      li.inner-nav__item: span.nav-inner Оформление заказа 
+      li.inner-nav__item.inner-nav__item_active: span.nav-inner Контактная информация
+      li.inner-nav__item.inner-nav__item_disable: span.nav-inner Подтверждение 
+    
+    .row.mb-0.mb-md-8
+      .col-12.col-sm
+        form(action="").order-info
+          .order-info__type
+            label.radio
+              input.radio__input(type="radio" name="delivery-type" value="Доставка")
+              span.radio__ico
+              span.radio__title Доставка
+            label.radio
+              input.radio__input(type="radio" name="delivery-type" value="Самовывоз")
+              span.radio__ico
+              span.radio__title Самовывоз
+          .row.order-info__main
+            .col.order-info__form
+              .row.order-info__form-row
+                .col-12.col-md-6.mb-2.mb-md-0
+                  .form-control
+                    .form-control__title Улица
+                    .form-control__input: input(type="text").input.input_default.w-100
+                .col-12.col-md-6
+                  .row
+                    .col-4
+                      .form-control
+                        .form-control__title Дом
+                        .form-control__input: input(type="text").input.input_default.w-100
+                    .col-4
+                      .form-control
+                        .form-control__title Этаж
+                        .form-control__input: input(type="text").input.input_default.w-100
+                    .col-4
+                      .form-control
+                        .form-control__title Подьезд
+                        .form-control__input: input(type="text").input.input_default.w-100
+              .row.order-info__form-row
+                .col-12.col-md-6.mb-2.mb-md-0
+                  .form-control           
+                    .form-control__title Имя
+                    .form-control__input: input(type="text").input.input_default.w-100
+                .col-12.col-md-6
+                  .form-control           
+                    .form-control__title Телефон
+                    .form-control__input: input(type="text").input.input_default.w-100
+              .row.order-info__form-row
+                .col-12
+                  .form-control
+                    .form-control__title Коментарий
+                    .form-control__input: input(type="text").input.input_default.w-100
+            .col.order-info__right
+              .form-control.mb-3
+                .form-control__title Когда получить
+                .form-control__input
+                  ul.order-pay
+                    li.order-pay__item
+                      .order-pay__col
+                        label.radio
+                          input(type="radio" name="delivery").radio__input
+                          span.radio__ico
+                          span.radio__title Наличными
+                      .order-pay__col
+                        input(type="text" placeholder="Сдача с Р").input.input_default.w-100
+                    li.order-pay__item
+                      .order-pay__col
+                        label.radio
+                          input(type="radio" name="delivery").radio__input
+                          span.radio__ico
+                          span.radio__title Оплата
+                    li.order-pay__item
+                      .order-pay__col
+                        label.radio
+                          input(type="radio" name="delivery").radio__input
+                          span.radio__ico
+                          span.radio__title Картой
+                      .order-pay__col
+                        ul.pay-methods
+                          li.pay-methods__item: svg.svgico.svgico-mastercard: use(xlink:href="img/symbol-defs.svg#svgico-mastercard")
+                          li.pay-methods__item: svg.svgico.svgico-maestro: use(xlink:href="img/symbol-defs.svg#svgico-maestro")
+                          li.pay-methods__item: svg.svgico.svgico-visa: use(xlink:href="img/symbol-defs.svg#svgico-visa")
+                          li.pay-methods__item: svg.svgico.svgico-mir: use(xlink:href="img/symbol-defs.svg#svgico-mir")
+              .form-control.mb-3.mb-md-0
+                .form-control__title Оплата
+                .form-control__input
+                  ul.order-pay
+                    li.order-pay__item
+                      .order-pay__col
+                        label.radio
+                          input(type="radio" name="pay").radio__input
+                          span.radio__ico
+                          span.radio__title Как можно быстрее (60 мин)
+                    li.order-pay__item
+                      .order-pay__col
+                        label.radio
+                          input(type="radio" name="pay").radio__input
+                          span.radio__ico
+                          span.radio__title Выбрть время
+                      .order-pay__col
+                        input(type="text" placeholder="Сдача с Р").input.input_default.w-100
+      .col-12.col-sm.check-col.mb-6.mb-lg-0
+        .back-link.d-none.d-md-block
+          a(href="#") Вернутся в меню
+        .check
+          .decor-block__decor
+            svg.svgico.svgico-dec-left-top: use(xlink:href="img/symbol-defs.svg#svgico-dec-left-top")
+            svg.svgico.svgico-dec-right-bottom: use(xlink:href="img/symbol-defs.svg#svgico-dec-right-bottom")
+          .check__top
+            ul.check__list
+              li.check__item
+                span.check__name Товаров
+                span.check__value 5
+              li.check__item
+                span.check__name Доставка
+                span.check__value 0 р.
+              li.check__item
+                span.check__name Введите <br> промокод
+                span.check__value: input.input(type="text").input.input_promo
+          .check__final
+            .check__final-desc Сумма к оплате:
+            .check__final-price 1370 р.
+          button.check__final-btn.btn.btn_primary-light Оформить заказ

@@ -1,0 +1,16 @@
+extends _template
+
+block main
+  .container
+    .inner-header
+      .h.h_big корзина
+    ul.inner-nav.inner-nav_arrow
+      li.inner-nav__item: span.nav-inner Оформление заказа 
+      li.inner-nav__item.inner-nav__item_active: span.nav-inner Контактная информация
+      li.inner-nav__item.inner-nav__item_disable: span.nav-inner Подтверждение 
+    
+    .row.mb-0.mb-md-8
+      .col-12
+        .order-success
+          .order-success__header Спасибо! <br> Ваш заказ принят.
+          .order-success__description С вами свяжется наш менеджер для подтверждения заказа.

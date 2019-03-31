@@ -1,0 +1,26 @@
+{
+  "name": "kibteh",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Kovakin Alexey <qwazik21@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Qwazik/kibteh",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "build/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "swiper": "^4.4.6",
+    "parsleyjs": "^2.8.1",
+    "jquery.maskedinput": "^1.4.1",
+    "jquery": "^3.3.1",
+    "fancybox": "^3.5.6",
+    "air-datepicker": "^2.2.3"
+  }
+}

@@ -1,0 +1,21 @@
+mixin product-item(img,name,desc)
+  .product-item
+    .product-item__image: img(src="img/tabs-prod.jpg", alt="")
+    .product-item__info
+      .product-item__name 
+        span.prod-name=name
+        .product-item__tip.tip i
+          .tip__content Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!
+      .product-item__desc.prod-desc
+        p=desc
+      .product-item__offer
+        span.prod-size 250 гр
+        span.prod-price.fz-18 370 р.
+      .product-item__footer
+        .counter
+          button.counter__btn -
+          input(type="text" value="0").counter__input 
+          button.counter__btn +
+        button.btn.btn_green-morelight 
+          span В корзину
+          span.icm к

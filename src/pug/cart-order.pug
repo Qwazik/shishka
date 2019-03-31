@@ -1,0 +1,80 @@
+extends _template
+
+block main
+  .container
+    .inner-header
+      .h.h_big корзина
+    ul.inner-nav.inner-nav_arrow
+      li.inner-nav__item: span.nav-inner Оформление заказа 
+      li.inner-nav__item.inner-nav__item_active: span.nav-inner Контактная информация
+      li.inner-nav__item.inner-nav__item_disable: span.nav-inner Подтверждение 
+    
+    .row
+      .col-12.col-sm
+        .cart-table.mb-5
+          -for(var i = 0; i< 4; i++)
+            .cart-table__row
+              .cart-table__cell.cart-table__image: img(src="img/cart-product.jpg", alt="")
+              .cart-table__cell.cart-table__info
+                span.prod-name Американский
+                span.prod-size 250 гр
+              .cart-table__cell.cart-table__counter
+                .counter
+                  button.counter__btn -
+                  input(type="text" value="0").counter__input 
+                  button.counter__btn +
+              .cart-table__cell.cart-table__price
+                .prod-price 370 р.
+              .cart-table__cell
+                button.prod-close x 
+      .col-12.col-sm.check-col.mb-6.mb-lg-0
+        .back-link.d-none.d-md-block
+          a(href="#") Вернутся в меню
+        .check
+          .decor-block__decor
+            svg.svgico.svgico-dec-left-top: use(xlink:href="img/symbol-defs.svg#svgico-dec-left-top")
+            svg.svgico.svgico-dec-right-bottom: use(xlink:href="img/symbol-defs.svg#svgico-dec-right-bottom")
+          .check__top
+            ul.check__list
+              li.check__item
+                span.check__name Товаров
+                span.check__value 5
+              li.check__item
+                span.check__name Доставка
+                span.check__value 0 р.
+              li.check__item
+                span.check__name Введите <br> промокод
+                span.check__value: input.input(type="text").input.input_promo
+          .check__final
+            .check__final-desc Сумма к оплате:
+            .check__final-price 1370 р.
+          button.check__final-btn.btn.btn_primary-light Оформить заказ
+  .tabs(data-tabs).d-none.d-md-block
+    .container
+      .h.h_big.h_center Добавьте к заказу
+      ul.tabs-nav(data-tabs-nav)
+        li.tabs-nav__item: span.nav-inner С этим товар покупают
+        li.tabs-nav__item: span.nav-inner Популярные
+        li.tabs-nav__item: span.nav-inner Похожие
+      .tabs-content.mb-3(data-tabs-content)
+        -for(var i =0;i<3;i++)
+          .tabs-content__item(class=`${i==0?'active':''}`)
+            .swiper-container(data-swiper="additionals")
+              .swiper-wrapper
+                  .swiper-slide.h-auto
+                    +product-item('img/tabs-prod.jpg', 'Американский бургер', 'Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата, бекон, яйцо, помидор.')
+                  .swiper-slide.h-auto
+                    +product-item('img/tabs-prod.jpg', 'Пепси', '')
+                  .swiper-slide.h-auto
+                    +product-item('img/tabs-prod.jpg', 'Баварская пивная тарелка с грибами', 'Соус горчичный, лист салата, бекон, яйцо, помидор.')
+                  .swiper-slide.h-auto
+                    +product-item('img/tabs-prod.jpg', 'Пицца Маргарита', 'Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.')
+                  .swiper-slide.h-auto
+                    +product-item('img/tabs-prod.jpg', 'Пицца Маргарита', 'Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.')
+                  .swiper-slide.h-auto
+                    +product-item('img/tabs-prod.jpg', 'Пицца Маргарита', 'Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.')
+              .swiper-nav
+                .swiper-nav__prev <
+                .swiper-nav__next >
+                          
+        

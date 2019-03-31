@@ -1,0 +1,38 @@
+extends _template
+
+block main
+  .container
+    .inner-header
+      .h.h_big бургеры
+    ul.inner-nav.inner-nav_line
+      li.inner-nav__item: a(href="#").nav-inner Пицца     
+      li.inner-nav__item: a(href="#").nav-inner Бургеры
+      li.inner-nav__item: a(href="#").nav-inner Паста
+      li.inner-nav__item: a(href="#").nav-inner Холодные закуски
+      li.inner-nav__item: a(href="#").nav-inner Горячие закуски
+      li.inner-nav__item: a(href="#").nav-inner Салаты
+      li.inner-nav__item: a(href="#").nav-inner Супы
+      li.inner-nav__item: a(href="#").nav-inner Гарниры
+      li.inner-nav__item: a(href="#").nav-inner Горячие блюда
+      li.inner-nav__item: a(href="#").nav-inner Десерты
+      li.inner-nav__item: a(href="#").nav-inner Напитки
+    .row.justify-content-between
+      .col-auto
+        ul.breadcrumbs
+          li.breadcrumbs__item: a(href="#").breadcrubs__link Главная
+          li.breadcrumbs__item: a(href="#").breadcrubs__link Меню
+          li.breadcrumbs__item Бургеры
+      .col-auto
+        .sort
+          .sort__title Сортировка:
+          .sort__select
+            select
+              option Новинки
+              option Популярные
+              option Дешевле
+              option Дороже
+    .container.big-gutters
+      .row.py-7
+        -for(var i = 0; i< 10; i++)
+          .col-3.mb-7
+            +product-item('img/tabs-prod.jpg', 'Американский бургер', 'Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата, бекон, яйцо, помидор.')

@@ -1,0 +1,51 @@
+extends _template
+
+block main
+  .container
+    .inner-header
+      .inner-header__header ДОСТАВКА ЕДЫ И ОБЕДОВ
+      .inner-header__desc ПО БРЯНСКУ И ЗА ГОРОД
+    .delivery-info
+      .delivery-info__col
+        .delivery-time: img(src="img/90min.png", alt="").img-responsive
+        .delivery-section
+          .delivery-section__title Доставка <br> осуществляется
+          .delivery-section__content С 11:00 ДО 22:00  
+        .delivery-sep
+        .delivery-section
+          .delivery-section__title Заказы принимаются <br> ежедневно
+          .delivery-section__content С 11:00 ДО 22:00   
+      .delivery-info__col
+        .delivery-section
+          .delivery-section__content.tt.fz-20 Бесплатная доставка <span class="fz-16">от</span> 800р.
+        .delivery-section
+          .delivery-section__title.tt.fz-12.mb-1 стоимость
+          .delivery-section__content
+            ul
+              li по Брянску - 200 рублей
+              li за город от 1500 рублей
+              li Доставка за  Антоновка (Брянский район) - 300 рублей 
+        .deliver 
+          .delivery-section__title.tt.fz-12.mb-2 оплата
+          .delivery-section__content
+            ul.pay-methods
+              li.pay-methods__item: svg.svgico.svgico-mastercard: use(xlink:href="img/symbol-defs.svg#svgico-mastercard")
+              li.pay-methods__item: svg.svgico.svgico-maestro: use(xlink:href="img/symbol-defs.svg#svgico-maestro")
+              li.pay-methods__item: svg.svgico.svgico-visa: use(xlink:href="img/symbol-defs.svg#svgico-visa")
+              li.pay-methods__item: svg.svgico.svgico-mir: use(xlink:href="img/symbol-defs.svg#svgico-mir")
+    .row.content.mb-7
+      .col-12.col-lg-7.order-9.order-lg-0
+        p Мы хотим быть ближе к нашим любимым гостям, даже если нет возможности посетить нас лично!
+        p Поэтому с мая 2017 года мы открыли собственную службу доставки блюд. Служба доставки охватывает весь город Брянск, таким образом, становится возможным, например, заказ обедов в офис или доставка обедов на дом.
+        p Наша служба доставки принимает заказы ежедневно с 11 до 22 часов. 
+        p Доставка обедов начинается с 12:30, работает служба до 23:00.
+        p Сейчас начал работу интернет-магазин, сделать заказ и оплатить его онлайн можно буквально за минуту. Наш диспетчер поможет вам сориентироваться в оформлении заказа, а курьер доставит его в течение 90 минут! 
+        p Время доставки может меняться в зависимости от загруженности ресторана и дорог, об этом заранее предупредит диспетчер. Помимо доставки обедов по Брянску, наши курьеры с радостью привезут ваш заказ и за пределы города, в этом случает стоимость и сроки доставки необходимо уточнить у диспетчера или на сайте.
+        p Помимо доставки блюд на конкретный адрес также доступен самовывоз. Вы делаете заказ и всего через 40 минут блюда можно забирать из ресторана.
+        p Наша служба доставки позволит вам насладиться любимыми блюдами ресторана, даже не выходя из дома, а постоянные улучшения и нововведения сделают заказы максимально удобными и комфортными!
+      .col-12.col-lg-4.offset-lg-1
+        p.fz-15.color-green Если при заказе товара у Вас возникли трудности позвоните нам и мы поможем оформить Ваш заказ. 
+        p.phone.fz-19 <small>+7 (4832)</small>  505-300
+        .d-sm-flex.d-lg-block.align-items-center.mb-3.mb-sm-0
+          img(src="img/delivery-pizza.jpg", alt="").mb-2.mr-4.mr-lg-0
+          p.fz-14.color-lightgreen Внимание! <br> Время доставки может измениться в зависимости  от загруженности ресторана, погодных и дорожных условий.  Об этом Вас сразу предупредит менеджер  при подтверждении Вашего заказа.
