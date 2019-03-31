@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>start</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="libs/swiper/dist/css/swiper.min.css" rel="stylesheet">
+    <link href="libs/air-datepicker/dist/css/datepicker.min.css" rel="stylesheet">
+    <link href="libs/select2/dist/css/select2.min.css" rel="stylesheet">
+    <link href="fonts/icomoon/style.css" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body><!--[if lt IE 10]>
+    <p class="browserupgrade">Ваш браузер  <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для корректного отображения сайтов.</p><![endif]-->
+    <div class="page" id="app">
+      <!-- START: header-->
+      <div class="header">
+        <div class="container">
+          <div class="row header__row">
+            <div class="col d-lg-none">
+              <button class="mobile-nav-btn"> <span></span><span></span><span></span></button>
+            </div>
+            <div class="col header__nav">
+              <nav class="main-nav"><a class="main-nav__link" href="#">Меню</a><a class="main-nav__link" href="#">Доставка</a><a class="main-nav__link" href="#">Бронь</a><a class="main-nav__link" href="#">Акции</a><a class="main-nav__link" href="#">Контакты</a></nav>
+            </div>
+            <div class="col-auto header__logo"><a class="logo" href="/"><img class="img-responsive" src="img/logo.png" alt="Шишка"></a></div>
+            <div class="col header__right">
+              <div class="header-right">
+                <div class="header-right__col">
+                  <div class="top-cart-wrapper"><a class="top-cart" href="/cart/">
+                      <div class="top-cart__name" top-cart__name_added><span>Корзина </span><span>0</span></div>
+                      <div class="top-cart__price"><span>0 </span><span>руб.</span></div></a>
+                    <div class="cart-drop">
+                      <ul class="cart-drop__list">
+                        <li class="cart-drop__item">
+                          <div class="cart-drop__row">
+                            <div class="prod-name">Американский бургер
+                              <div class="prod-size">250 гр</div>
+                            </div>
+                            <button class="prod-close">x</button>
+                          </div>
+                          <div class="cart-drop__row">
+                            <div class="counter">
+                              <button class="counter__btn">-</button>
+                              <input class="counter__input" type="text" value="0">
+                              <button class="counter__btn">+</button>
+                            </div>
+                            <div class="prod-price">370 р.</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="cart-drop__footer"><a class="btn btn_primary-light w-100" href="#">Оформить заказ</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-right__sep"></div>
+                <div class="header-right__col">
+                  <div class="header-contacts"><a class="header-contacts__item" href="tel: +74832505200"> <small>+7 (4832)</small>  505-200</a><a class="header-contacts__item" href="tel: +74832505300"> <small>+7 (4832)</small>  505-300</a><a class="btn btn_bd header-contacts__callback" href="#">Обратный звонок</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: /header-->
+      <div class="container">
+        <div class="inner-header">
+          <div class="h h_big">корзина</div>
+        </div>
+        <ul class="inner-nav inner-nav_arrow">
+          <li class="inner-nav__item"><span class="nav-inner">Оформление заказа </span></li>
+          <li class="inner-nav__item inner-nav__item_active"><span class="nav-inner">Контактная информация</span></li>
+          <li class="inner-nav__item inner-nav__item_disable"><span class="nav-inner">Подтверждение </span></li>
+        </ul>
+        <div class="row mb-0 mb-md-8">
+          <div class="col-12">
+            <div class="order-success">
+              <div class="order-success__header">Спасибо! <br> Ваш заказ принят.</div>
+              <div class="order-success__description">С вами свяжется наш менеджер для подтверждения заказа.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <div class="main-footer__main">
+          <div class="container">
+            <div class="row flex-lg-nowrap justify-content-between">
+              <div class="col-auto main-footer__logo"><a class="footer-logo" href="/"><img src="img/logo-light.png" alt=""></a></div>
+              <div class="col-auto main-footer__contacts">
+                <div class="footer-contacts">
+                  <div class="footer-contacts__address">Брянского Фронта, 18</div><a class="footer-contacts__item" href="tel: +74832505200"><small>+7 (4832) </small>505-200</a><a class="footer-contacts__item" href="tel: +74832505300"><small>+7 (4832) </small>505-300</a>
+                </div>
+              </div>
+              <div class="col-auto main-footer__socials">
+                <ul class="social">
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm">inst</i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm">vk</i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm">gis</i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm">visor</i></a></li>
+                </ul>
+                <div class="after-social">
+                  <p>По всем вопросам пишите:</p><a href="mailto: info@avgustin32.ru">INFO@AVGUSTIN32.RU</a>
+                </div>
+              </div>
+              <div class="col main-footer__pays">
+                <ul class="pay-methods">
+                  <li class="pay-methods__item">
+                    <svg class="svgico svgico-mastercard">
+                      <use xlink:href="img/symbol-defs.svg#svgico-mastercard"></use>
+                    </svg>
+                  </li>
+                  <li class="pay-methods__item">
+                    <svg class="svgico svgico-maestro">
+                      <use xlink:href="img/symbol-defs.svg#svgico-maestro"></use>
+                    </svg>
+                  </li>
+                  <li class="pay-methods__item">
+                    <svg class="svgico svgico-visa">
+                      <use xlink:href="img/symbol-defs.svg#svgico-visa"></use>
+                    </svg>
+                  </li>
+                  <li class="pay-methods__item">
+                    <svg class="svgico svgico-mir">
+                      <use xlink:href="img/symbol-defs.svg#svgico-mir"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer__bottom">
+          <div class="container align-items-center">
+            <div class="main-footer__copyright">Официальный сайт <br class="d-sm-none"> © ООО «Августин», 2008 - 2019</div>
+            <div class="main-footer__studios"><a class="studio-link" href="#">Дизайн сайта </a><a class="studio-link" href="#"><span class="studio-link__name">Разработка и продвижение</span>
+                <svg class="studio-link__image svgico svgico-nifl">
+                  <use xlink:href="img/symbol-defs.svg#svgico-nifl"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </footer>
+      <div class="gitnav"><a href="index.html">Главная</a><a href="cart-order.html">Оформление 1</a><a href="cart-info.html">Оформление 2</a><a href="cart-agree.html">Оформление 3</a><a href="contacts.html">Контакты</a><a href="delivery.html">Доставка</a><a href="menu.html">Меню </a></div>
+    </div>
+    <!--scripts =================================================-->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="libs/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+    <script src="libs/air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="libs/select2/dist/js/select2.full.min.js"></script>
+    <script src="libs/svgxuse/dist/svgxuse.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

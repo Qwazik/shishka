@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>start</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="libs/swiper/dist/css/swiper.min.css" rel="stylesheet">
+    <link href="libs/air-datepicker/dist/css/datepicker.min.css" rel="stylesheet">
+    <link href="libs/select2/dist/css/select2.min.css" rel="stylesheet">
+    <link href="fonts/icomoon/style.css" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body><!--[if lt IE 10]>
+    <p class="browserupgrade">Ваш браузер  <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для корректного отображения сайтов.</p><![endif]-->
+    <div class="page" id="app">
+      <!-- START: header-->
+      <div class="header">
+        <div class="container">
+          <div class="row header__row">
+            <div class="col d-lg-none">
+              <button class="mobile-nav-btn"> <span></span><span></span><span></span></button>
+            </div>
+            <div class="col header__nav">
+              <nav class="main-nav"><a class="main-nav__link" href="#">Меню</a><a class="main-nav__link" href="#">Доставка</a><a class="main-nav__link" href="#">Бронь</a><a class="main-nav__link" href="#">Акции</a><a class="main-nav__link" href="#">Контакты</a></nav>
+            </div>
+            <div class="col-auto header__logo"><a class="logo" href="/"><img class="img-responsive" src="img/logo.png" alt="Шишка"></a></div>
+            <div class="col header__right">
+              <div class="header-right">
+                <div class="header-right__col">
+                  <div class="top-cart-wrapper"><a class="top-cart" href="/cart/">
+                      <div class="top-cart__name" top-cart__name_added><span>Корзина </span><span>0</span></div>
+                      <div class="top-cart__price"><span>0 </span><span>руб.</span></div></a>
+                    <div class="cart-drop">
+                      <ul class="cart-drop__list">
+                        <li class="cart-drop__item">
+                          <div class="cart-drop__row">
+                            <div class="prod-name">Американский бургер
+                              <div class="prod-size">250 гр</div>
+                            </div>
+                            <button class="prod-close">x</button>
+                          </div>
+                          <div class="cart-drop__row">
+                            <div class="counter">
+                              <button class="counter__btn">-</button>
+                              <input class="counter__input" type="text" value="0">
+                              <button class="counter__btn">+</button>
+                            </div>
+                            <div class="prod-price">370 р.</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="cart-drop__footer"><a class="btn btn_primary-light w-100" href="#">Оформить заказ</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-right__sep"></div>
+                <div class="header-right__col">
+                  <div class="header-contacts"><a class="header-contacts__item" href="tel: +74832505200"> <small>+7 (4832)</small>  505-200</a><a class="header-contacts__item" href="tel: +74832505300"> <small>+7 (4832)</small>  505-300</a><a class="btn btn_bd header-contacts__callback" href="#">Обратный звонок</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: /header-->
+      <div class="container">
+        <div class="inner-header">
+          <div class="h h_big">корзина</div>
+        </div>
+        <ul class="inner-nav inner-nav_arrow">
+          <li class="inner-nav__item"><span class="nav-inner">Оформление заказа </span></li>
+          <li class="inner-nav__item inner-nav__item_active"><span class="nav-inner">Контактная информация</span></li>
+          <li class="inner-nav__item inner-nav__item_disable"><span class="nav-inner">Подтверждение </span></li>
+        </ul>
+        <div class="row">
+          <div class="col-12 col-sm">
+            <div class="cart-table mb-5">
+              <div class="cart-table__row">
+                <div class="cart-table__cell cart-table__image"><img src="img/cart-product.jpg" alt=""></div>
+                <div class="cart-table__cell cart-table__info"><span class="prod-name">Американский</span><span class="prod-size">250 гр</span></div>
+                <div class="cart-table__cell cart-table__counter">
+                  <div class="counter">
+                    <button class="counter__btn">-</button>
+                    <input class="counter__input" type="text" value="0">
+                    <button class="counter__btn">+</button>
+                  </div>
+                </div>
+                <div class="cart-table__cell cart-table__price">
+                  <div class="prod-price">370 р.</div>
+                </div>
+                <div class="cart-table__cell">
+                  <button class="prod-close">x </button>
+                </div>
+              </div>
+              <div class="cart-table__row">
+                <div class="cart-table__cell cart-table__image"><img src="img/cart-product.jpg" alt=""></div>
+                <div class="cart-table__cell cart-table__info"><span class="prod-name">Американский</span><span class="prod-size">250 гр</span></div>
+                <div class="cart-table__cell cart-table__counter">
+                  <div class="counter">
+                    <button class="counter__btn">-</button>
+                    <input class="counter__input" type="text" value="0">
+                    <button class="counter__btn">+</button>
+                  </div>
+                </div>
+                <div class="cart-table__cell cart-table__price">
+                  <div class="prod-price">370 р.</div>
+                </div>
+                <div class="cart-table__cell">
+                  <button class="prod-close">x </button>
+                </div>
+              </div>
+              <div class="cart-table__row">
+                <div class="cart-table__cell cart-table__image"><img src="img/cart-product.jpg" alt=""></div>
+                <div class="cart-table__cell cart-table__info"><span class="prod-name">Американский</span><span class="prod-size">250 гр</span></div>
+                <div class="cart-table__cell cart-table__counter">
+                  <div class="counter">
+                    <button class="counter__btn">-</button>
+                    <input class="counter__input" type="text" value="0">
+                    <button class="counter__btn">+</button>
+                  </div>
+                </div>
+                <div class="cart-table__cell cart-table__price">
+                  <div class="prod-price">370 р.</div>
+                </div>
+                <div class="cart-table__cell">
+                  <button class="prod-close">x </button>
+                </div>
+              </div>
+              <div class="cart-table__row">
+                <div class="cart-table__cell cart-table__image"><img src="img/cart-product.jpg" alt=""></div>
+                <div class="cart-table__cell cart-table__info"><span class="prod-name">Американский</span><span class="prod-size">250 гр</span></div>
+                <div class="cart-table__cell cart-table__counter">
+                  <div class="counter">
+                    <button class="counter__btn">-</button>
+                    <input class="counter__input" type="text" value="0">
+                    <button class="counter__btn">+</button>
+                  </div>
+                </div>
+                <div class="cart-table__cell cart-table__price">
+                  <div class="prod-price">370 р.</div>
+                </div>
+                <div class="cart-table__cell">
+                  <button class="prod-close">x </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm check-col mb-6 mb-lg-0">
+            <div class="back-link d-none d-md-block"><a href="#">Вернутся в меню</a></div>
+            <div class="check">
+              <div class="decor-block__decor">
+                <svg class="svgico svgico-dec-left-top">
+                  <use xlink:href="img/symbol-defs.svg#svgico-dec-left-top"></use>
+                </svg>
+                <svg class="svgico svgico-dec-right-bottom">
+                  <use xlink:href="img/symbol-defs.svg#svgico-dec-right-bottom"></use>
+                </svg>
+              </div>
+              <div class="check__top">
+                <ul class="check__list">
+                  <li class="check__item"><span class="check__name">Товаров</span><span class="check__value">5</span></li>
+                  <li class="check__item"><span class="check__name">Доставка</span><span class="check__value">0 р.</span></li>
+                  <li class="check__item"><span class="check__name">Введите <br> промокод</span><span class="check__value">
+                      <input class="input input input_promo" type="text"></span></li>
+                </ul>
+              </div>
+              <div class="check__final">
+                <div class="check__final-desc">Сумма к оплате:</div>
+                <div class="check__final-price">1370 р.</div>
+              </div>
+              <button class="check__final-btn btn btn_primary-light">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs d-none d-md-block" data-tabs>
+        <div class="container">
+          <div class="h h_big h_center">Добавьте к заказу</div>
+          <ul class="tabs-nav" data-tabs-nav>
+            <li class="tabs-nav__item"><span class="nav-inner">С этим товар покупают</span></li>
+            <li class="tabs-nav__item"><span class="nav-inner">Популярные</span></li>
+            <li class="tabs-nav__item"><span class="nav-inner">Похожие</span></li>
+          </ul>
+          <div class="tabs-content mb-3" data-tabs-content>
+            <div class="tabs-content__item active">
+              <div class="swiper-container" data-swiper="additionals">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Американский бургер</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата, бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пепси</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p></p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Баварская пивная тарелка с грибами</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Соус горчичный, лист салата, бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пицца Маргарита</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пицца Маргарита</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пицца Маргарита</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-nav">
+                  <div class="swiper-nav__prev"><</div>
+                  <div class="swiper-nav__next">></div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-content__item">
+              <div class="swiper-container" data-swiper="additionals">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Американский бургер</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата, бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пепси</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p></p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Баварская пивная тарелка с грибами</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Соус горчичный, лист салата, бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пицца Маргарита</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пицца Маргарита</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пицца Маргарита</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-nav">
+                  <div class="swiper-nav__prev"><</div>
+                  <div class="swiper-nav__next">></div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-content__item">
+              <div class="swiper-container" data-swiper="additionals">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Американский бургер</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата, бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пепси</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p></p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Баварская пивная тарелка с грибами</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Соус горчичный, лист салата, бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пицца Маргарита</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пицца Маргарита</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <div class="product-item">
+                      <div class="product-item__image"><img src="img/tabs-prod.jpg" alt=""/></div>
+                      <div class="product-item__info">
+                        <div class="product-item__name"> <span class="prod-name">Пицца Маргарита</span>
+                          <div class="product-item__tip tip">i
+                            <div class="tip__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis ex, facilis maiores ullam minima error cupiditate accusantium asperiores eligendi quo eveniet, ipsam inventore. Labore consequatur placeat a magnam nesciunt!</div>
+                          </div>
+                        </div>
+                        <div class="product-item__desc prod-desc">
+                          <p>Булочка, котлета из мраморной говядины, соус bbq, соус горчичный, лист салата,  бекон, яйцо, помидор.</p>
+                        </div>
+                        <div class="product-item__offer"><span class="prod-size">250 гр</span><span class="prod-price fz-18">370 р.</span></div>
+                        <div class="product-item__footer">
+                          <div class="counter">
+                            <button class="counter__btn">-</button>
+                            <input class="counter__input" type="text" value="0"/>
+                            <button class="counter__btn">+</button>
+                          </div>
+                          <button class="btn btn_green-morelight"> <span>В корзину</span><span class="icm">к</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-nav">
+                  <div class="swiper-nav__prev"><</div>
+                  <div class="swiper-nav__next">></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <div class="main-footer__main">
+          <div class="container">
+            <div class="row flex-lg-nowrap justify-content-between">
+              <div class="col-auto main-footer__logo"><a class="footer-logo" href="/"><img src="img/logo-light.png" alt=""></a></div>
+              <div class="col-auto main-footer__contacts">
+                <div class="footer-contacts">
+                  <div class="footer-contacts__address">Брянского Фронта, 18</div><a class="footer-contacts__item" href="tel: +74832505200"><small>+7 (4832) </small>505-200</a><a class="footer-contacts__item" href="tel: +74832505300"><small>+7 (4832) </small>505-300</a>
+                </div>
+              </div>
+              <div class="col-auto main-footer__socials">
+                <ul class="social">
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm">inst</i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm">vk</i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm">gis</i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm">visor</i></a></li>
+                </ul>
+                <div class="after-social">
+                  <p>По всем вопросам пишите:</p><a href="mailto: info@avgustin32.ru">INFO@AVGUSTIN32.RU</a>
+                </div>
+              </div>
+              <div class="col main-footer__pays">
+                <ul class="pay-methods">
+                  <li class="pay-methods__item">
+                    <svg class="svgico svgico-mastercard">
+                      <use xlink:href="img/symbol-defs.svg#svgico-mastercard"></use>
+                    </svg>
+                  </li>
+                  <li class="pay-methods__item">
+                    <svg class="svgico svgico-maestro">
+                      <use xlink:href="img/symbol-defs.svg#svgico-maestro"></use>
+                    </svg>
+                  </li>
+                  <li class="pay-methods__item">
+                    <svg class="svgico svgico-visa">
+                      <use xlink:href="img/symbol-defs.svg#svgico-visa"></use>
+                    </svg>
+                  </li>
+                  <li class="pay-methods__item">
+                    <svg class="svgico svgico-mir">
+                      <use xlink:href="img/symbol-defs.svg#svgico-mir"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer__bottom">
+          <div class="container align-items-center">
+            <div class="main-footer__copyright">Официальный сайт <br class="d-sm-none"> © ООО «Августин», 2008 - 2019</div>
+            <div class="main-footer__studios"><a class="studio-link" href="#">Дизайн сайта </a><a class="studio-link" href="#"><span class="studio-link__name">Разработка и продвижение</span>
+                <svg class="studio-link__image svgico svgico-nifl">
+                  <use xlink:href="img/symbol-defs.svg#svgico-nifl"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </footer>
+      <div class="gitnav"><a href="index.html">Главная</a><a href="cart-order.html">Оформление 1</a><a href="cart-info.html">Оформление 2</a><a href="cart-agree.html">Оформление 3</a><a href="contacts.html">Контакты</a><a href="delivery.html">Доставка</a><a href="menu.html">Меню </a></div>
+    </div>
+    <!--scripts =================================================-->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="libs/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+    <script src="libs/air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="libs/select2/dist/js/select2.full.min.js"></script>
+    <script src="libs/svgxuse/dist/svgxuse.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
